@@ -1,16 +1,18 @@
 """
 PyPi Setup file.
 """
+import os
 # pylint: disable=no-name-in-module, import-error
 from setuptools import setup, find_packages
 
 NAME = 'django-linked-items'
 DESCRIPTION = 'Linked Items'
-VERSION = '1.0.0.2'
+VERSION = '1.0.0.3'
 AUTHOR = 'Martin P. Hellwig'
 AUTHOR_EMAIL = 'martin.hellwig@gmail.com'
 URL_MAIN = "https://bitbucket.org/hellwig/" + NAME + '/'
-URL_DOWNLOAD = URL_MAIN + 'download/' + VERSION + '.zip'
+DOWNLOAD_ID = os.environ.get('CI_COMMIT_ID', VERSION)
+URL_DOWNLOAD = URL_MAIN + 'get/' + DOWNLOAD_ID + '.zip'
 
 KEYWORDS = [
     'django',
