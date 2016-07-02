@@ -7,7 +7,7 @@ from setuptools import setup, find_packages
 
 NAME = 'django-linked-items'
 DESCRIPTION = 'Linked Items'
-VERSION = '1.0.0.3'
+VERSION = '1.0.0.4'
 AUTHOR = 'Martin P. Hellwig'
 AUTHOR_EMAIL = 'martin.hellwig@gmail.com'
 URL_MAIN = "https://bitbucket.org/hellwig/" + NAME + '/'
